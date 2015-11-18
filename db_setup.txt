@@ -1,0 +1,72 @@
+create database dm;
+use dm;
+
+
+create table user_role(
+	id   int NOT NULL AUTO_INCREMENT,
+	role varchar(30) NOT NULL,
+	PRIMARY KEY (id)
+);
+
+
+
+insert into user_role (role) values('admin');
+insert into user_role (role) values('user');
+
+create table user(
+	id      int NOT NULL AUTO_INCREMENT,
+	name 	varchar(30)  NOT NULL,
+	password varchar(80) Not NULL,
+	email   varchar(30)  NOT NULL,
+	role    int DEFAULT 2,
+	PRIMARY KEY (id)
+);
+
+insert into user (name,password,email,role) values('Marry',  MD5('admin'), 'marry@gmail.com', 1);
+insert into user (name,password,email,role) values('David', MD5('11111'), 'david@gmail.com', 2);
+insert into user (name,password,email,role) values('Stev', MD5('22222'), 'steve@gmail.com', 2);
+insert into user (name,password,email,role) values('Richard', MD5('33333'), 'ricard@gmail.com', 2);
+
+
+create table device(
+	id int NOT NULL AUTO_INCREMENT,
+	registerName varchar(50) NOT NULL,
+	deviceType varchar(30) NOT NULL,
+	deviceMode varchar(30) NOT NULL,
+	imei varchar(100),
+	serialNumber varchar(100),
+	os varchar(20),
+	osVersion varchar(20),
+	registerdate date,
+	status varchar(20),
+	owner int,
+	PRIMARY KEY (id)
+);
+
+insert into device (registerName,deviceType,deviceMode,imei,serialNumber, os,osVersion, registerdate, status, owner) values('One','Tablet',  'Ipad Mini', '00000000000', 'PASKDFDNXZXC', 'IOS', '10.9', now(), 'available',1);
+insert into device (registerName,deviceType,deviceMode,imei,serialNumber, os,osVersion, registerdate, status, owner) values('Two','Smartphone',  'Samsang Galax', '1111111111', 'ASDFXZDRE', 'Android', '6.0', now(), 'available',1);
+insert into device (registerName,deviceType,deviceMode,imei,serialNumber, os,osVersion, registerdate, status, owner) values('Three','Smartphone',  'Google Nexus', '2222222222', 'XPOSAFJWADF', 'Android', '5.2', now(), 'available',1);
+insert into device (registerName,deviceType,deviceMode,imei,serialNumber, os,osVersion, registerdate, status, owner) values('Four','Tablet',  'Nexus Tablet', '4444444444', 'ZCVCXSDFS', 'Android', '0.8', now(), 'available',1);
+
+insert into device (registerName,deviceType,deviceMode,imei,serialNumber, os,osVersion, registerdate, status, owner) values('WP','Smartphone',  'Windows Tablet', '3333333333', 'ZCVCXSDFSG', 'windows', '10.8', now(), 'available',1);
+
+
+
+create table device_borrow(
+	id int NOT NULL AUTO_INCREMENT,
+	deviceId int NOT NULL,
+	borrowerId int NOT NULL,
+	borrowedDate  datetime,
+	PRIMARY KEY (id)
+);
+insert into device_borrow (deviceId,borrowerId,borrowedDate) values(1,2, now());
+insert into device_borrow (deviceId,borrowerId,borrowedDate) values(2,3, now());
+insert into device_borrow (deviceId,borrowerId,borrowedDate) values(3,4, now());
+
+
+
+
+
+
+
+
