@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" 
+     android:background="@drawable/blue"
+    >
+     
+    <Button
+    android:id="@+id/register_link_button"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@drawable/bg1"
+    android:text="Register" 
+     android:layout_marginLeft="38dp"
+     android:layout_marginTop="90dp"
+    />
+    
+     <Button
+        android:id="@+id/user_link_button"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignBottom="@+id/register_link_button"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/register_link_button"
+        android:text="User"
+        android:background="@drawable/bg2" />
+    
+      <Button
+        android:id="@+id/device_link_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/register_link_button"
+        android:layout_marginLeft="38dp"
+         android:layout_marginTop="10dp"
+         android:text="Device"
+        android:background="@drawable/bg3" />
+     
+    <Button
+        android:id="@+id/acknowledge_link_button"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/register_link_button"
+        android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+          android:layout_toRightOf="@+id/device_link_button"
+           android:text="Acknowledge"
+        android:background="@drawable/bg4" />      
+            
+            
+    
+</RelativeLayout>

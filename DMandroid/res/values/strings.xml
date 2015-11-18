@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DM</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+<string name="test_string">kkkk</string>
+<string name="main_button">MAIN Button</string>
+<string name="acknowledge_string">Borrow</string>
+<string name="hint">please input your pincode</string>
+<string name="pincode">pincode</string>
+<string name="register_string">Register Device</string>
+<string name="register_device_name_string">device name</string>
+
+<string name="history_string">HISTORY</string>
+
+<string name="add_user_string">Add User</string>
+<string name="email">email</string>
+<string name="username">username</string>
+<string name="adduser">add user</string>
+<string name="user_management_string">User Management</string>
+<string name="device_string">Device</string>
+</resources>

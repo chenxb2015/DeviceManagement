@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+    
+    
+ 	<TextView
+        android:id="@+id/cdusername"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dip"
+        android:textSize="20sp"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_launcher" />
+
+ 	
+ 	 <TextView
+        android:id="@+id/cddevicename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+   
+        android:ellipsize="marquee"
+        android:singleLine="false"
+        android:text="Description"
+        android:textSize="12sp" />
+ 		
+ 	 <TextView
+        android:id="@+id/cdmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cddevicename"
+        android:layout_alignBaseline="@id/cdusername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@id/cdusername"
+        android:gravity="center_vertical"
+        android:text="Example application"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/cddeviceosImage"
+       	android:layout_width="20dp"
+   		android:layout_height="20dp"
+     	 android:layout_alignLeft="@id/cddevicename"
+     	  android:layout_alignBottom="@id/cddevicename"
+     	   android:layout_marginLeft="64dp"
+        android:src="@drawable/ic_launcher" />
+    
+    
+      <TextView
+        android:id="@+id/cddeviceosversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/cddeviceosImage"
+        android:layout_alignBottom="@id/cddeviceosImage"
+        android:layout_alignLeft="@id/cddeviceosImage"
+        android:layout_marginLeft="64dp"
+        android:ellipsize="marquee"
+        android:singleLine="false"
+        android:text="Description"
+        android:textSize="12sp" />
+
+</RelativeLayout> 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"> 
+	    
+    
+     <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+    
+    <RelativeLayout 
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+       <ImageButton
+	    android:id="@+id/add_user_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	     android:layout_alignParentRight="true" 
+		android:background="@null"
+	    android:src="@drawable/add2"
+	     />
+
+    </RelativeLayout>
+
+   
+
+</RelativeLayout>
